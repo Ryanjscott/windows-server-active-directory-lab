@@ -1,1 +1,59 @@
 
+---
+
+# `tickets/ticket-01`
+
+```markdown
+# Ticket 01: New Starter Account for Emily Carter
+
+## Request
+
+Create an Active Directory account for Emily Carter, a new Finance Analyst, and provide the standard Finance access required for her role.
+
+## Environment
+
+- Domain: CONTOSO.local
+- Domain controller: DC01
+- Username: ecarter
+- Department: Finance
+- Job title: Finance Analyst
+
+## Actions Taken
+
+1. Created the `ecarter` user account in the Finance OU.
+2. Recorded Emily's department and job title.
+3. Enabled the account.
+4. Configured a temporary password.
+5. Required the user to change the password at the first sign-in.
+6. Added Emily to `GG_Finance_Users`.
+7. Verified the account using Active Directory Users and Computers and PowerShell.
+
+## Verification
+
+The following were confirmed:
+
+- The account was enabled.
+- The account was located in the Finance OU.
+- Emily was a member of `GG_Finance_Users`.
+- A password change was required at the next sign-in.
+
+## Resolution
+
+Emily Carter's Active Directory account was created successfully in the Finance OU.
+
+The required employment details and Finance security-group membership were configured. The account was enabled and prepared for first-time authentication.
+
+## Skills Demonstrated
+
+- Active Directory user administration
+- OU management
+- Security-group membership
+- Password policy configuration
+- PowerShell verification
+- Jira ticket handling
+
+## Evidence
+
+- [Finance group membership](../screenshots/ticket-001-group-membership.png)
+- [User account verification](../screenshots/ticket-001-user-verification.png)
+- [Resolved Jira ticket](../screenshots/ticket-001-jira-resolved.png)
