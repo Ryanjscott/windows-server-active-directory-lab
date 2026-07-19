@@ -1,1 +1,78 @@
+# Ticket 10: Offboard Emily Carter
 
+## Request
+
+Remove Emily Carter's access following the end of her employment while retaining the Active Directory account for auditing.
+
+## Environment
+
+- User: Emily Carter
+- Username: ecarter
+- Domain: CONTOSO.local
+- Domain controller: DC01
+- Workstation: CLIENT02
+
+## Actions Taken
+
+1. Signed Emily out of CLIENT02.
+2. Recorded her existing group memberships.
+3. Exported her group memberships to:
+
+   `C:\Admin\Offboarding\ecarter-group-memberships.csv`
+
+4. Removed Emily from:
+   - GG_Finance_Users
+   - GG_Finance_Reporting
+5. Retained the required primary Domain Users membership.
+6. Disabled the Active Directory account.
+7. Added an offboarding date and description.
+8. Moved the account into the Disabled Objects OU.
+9. Verified that no direct access groups remained.
+10. Tested authentication from CLIENT02.
+
+## Cached Logon Consideration
+
+The first sign-in test succeeded because CLIENT02 used cached domain credentials.
+
+Cached domain logons were disabled temporarily to ensure the next test contacted DC01 directly. The second authentication attempt was denied because the domain account was disabled.
+
+This demonstrated the difference between:
+
+- Disabling an Active Directory account
+- Removing an existing interactive session
+- Cached workstation authentication
+
+## Verification
+
+The following were confirmed:
+
+- Enabled status: False
+- Direct access-group count: 0
+- Account location: Disabled Objects OU
+- Finance group memberships removed
+- Domain authentication denied
+
+## Resolution
+
+Emily Carter's access was removed successfully.
+
+The account was disabled and retained in the Disabled Objects OU for auditing rather than deleted. A sign-in test confirmed that the account could no longer authenticate against the domain.
+
+## Skills Demonstrated
+
+- User offboarding
+- Access revocation
+- Group-membership auditing
+- Account disabling
+- OU management
+- Cached credential troubleshooting
+- Authentication testing
+
+## Evidence
+
+- [Access before removal](../screenshots/ticket-010-access-before-removal.png)
+- [Access after removal](../screenshots/ticket-010-access-after-removal.png)
+- [Offboarding verification](../screenshots/ticket-010-offboarding-verification.png)
+- [Disabled account in Disabled Objects](../screenshots/ticket-010-account-disabled-and-moved.png)
+- [Login denied](../screenshots/ticket-010-login-denied.png)
+- [Resolved Jira ticket](../screenshots/ticket-010-jira-resolved.png)
