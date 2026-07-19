@@ -1,1 +1,40 @@
 
+---
+
+# `diagrams`
+
+```markdown
+# Project Diagrams
+
+## Network Diagram
+
+The CONTOSO lab network diagram is stored at:
+
+[View the network diagram](lab-environment/network-diagram.png)
+
+## Network Summary
+
+```text
+Oracle VirtualBox Host
+        |
+        | Internal Network: CONTOSO-LAN
+        | Subnet: 192.168.50.0/24
+        |
+        +-- DC01
+        |     192.168.50.10
+        |     Active Directory
+        |     DNS
+        |     DHCP
+        |     File Services
+        |     Print Services
+        |
+        +-- CLIENT01
+        |     DHCP
+        |     Original workstation
+        |     Retired after replacement
+        |
+        +-- CLIENT02
+              DHCP
+              Replacement workstation
+              Virtual TPM
+              BitLocker
