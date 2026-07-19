@@ -1,1 +1,68 @@
 
+---
+
+# `tickets/ticket-08`
+
+```markdown
+# Ticket 08: Replace Emily Carter's Workstation
+
+## Request
+
+Replace Emily Carter's original workstation after a simulated hardware failure and restore her access on a newly deployed device.
+
+## Environment
+
+- Original workstation: CLIENT01
+- Replacement workstation: CLIENT02
+- User: CONTOSO\ecarter
+- Domain: CONTOSO.local
+- Domain controller: DC01
+
+## Actions Taken
+
+1. Created a new Windows 11 Enterprise virtual machine.
+2. Named the replacement workstation CLIENT02.
+3. Installed VirtualBox Guest Additions.
+4. Connected CLIENT02 to CONTOSO-LAN.
+5. Verified DHCP and DNS configuration.
+6. Joined CLIENT02 to CONTOSO.local.
+7. Moved the CLIENT02 computer object into the Workstations OU.
+8. Signed in as Emily Carter.
+9. Restored access to the Finance shared folder.
+10. Confirmed Emily's existing Finance files were available.
+11. Disabled the CLIENT01 computer account.
+12. Moved CLIENT01 into the Disabled Objects OU.
+
+## Verification
+
+The following were confirmed:
+
+- CLIENT02 was joined to CONTOSO.local.
+- CLIENT02 was located in the Workstations OU.
+- Emily authenticated successfully.
+- The Finance share was accessible.
+- CLIENT01 was disabled and retained for auditing or disposal.
+
+## Resolution
+
+CLIENT02 was deployed successfully as Emily Carter's replacement workstation.
+
+Domain membership, user authentication and Finance resource access were restored. The original CLIENT01 account was disabled and retired.
+
+## Skills Demonstrated
+
+- Windows workstation deployment
+- Domain joining
+- DHCP and DNS verification
+- Active Directory computer management
+- User access restoration
+- Device retirement procedures
+
+## Evidence
+
+- [CLIENT02 prepared](../screenshots/ticket-008-client02-prepared.png)
+- [CLIENT02 domain join](../screenshots/ticket-008-client02-domain-join.png)
+- [CLIENT02 in Workstations OU](../screenshots/ticket-008-client02-workstations-ou.png)
+- [User access restored](../screenshots/ticket-008-user-access-restored.png)
+- [CLIENT01 retired](../screenshots/ticket-008-old-client-retired.png)
+- [Resolved Jira ticket](../screenshots/ticket-008-jira-resolved.png)
