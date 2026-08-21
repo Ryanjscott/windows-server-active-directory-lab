@@ -1,9 +1,3 @@
-
----
-
-# `tickets/ticket-01`
-
-```markdown
 # Ticket 01: New Starter Account for Emily Carter
 
 ## Request
@@ -21,12 +15,12 @@ Create an Active Directory account for Emily Carter, a new Finance Analyst, and 
 ## Actions Taken
 
 1. Created the `ecarter` user account in the Finance OU.
-2. Recorded Emily's department and job title.
+2. Recorded the user's department and job title.
 3. Enabled the account.
 4. Configured a temporary password.
-5. Required the user to change the password at the first sign-in.
+5. Required a password change at the first sign-in.
 6. Added Emily to `GG_Finance_Users`.
-7. Verified the account using Active Directory Users and Computers and PowerShell.
+7. Verified the account configuration in Active Directory.
 
 ## Verification
 
@@ -39,21 +33,19 @@ The following were confirmed:
 
 ## Resolution
 
-Emily Carter's Active Directory account was created successfully in the Finance OU.
-
-The required employment details and Finance security-group membership were configured. The account was enabled and prepared for first-time authentication.
+Emily Carter's Active Directory account was created successfully and the required Finance group membership was assigned.
 
 ## Skills Demonstrated
 
 - Active Directory user administration
 - OU management
 - Security-group membership
-- Password policy configuration
-- PowerShell verification
+- Password configuration
+- User onboarding
 - Jira ticket handling
 
 ## Evidence
 
-- [Finance group membership](../screenshots/ticket-001-group-membership.png)
-- [User account verification](../screenshots/ticket-001-user-verification.png)
-- [Resolved Jira ticket](../screenshots/ticket-001-jira-resolved.png)
+- [Finance group membership](../Screenshots/Ticket%2001%20-%20New%20User%20Onboarding/ticket-001-group-membership.png)
+- [User account verification](../Screenshots/Ticket%2001%20-%20New%20User%20Onboarding/ticket-001-user-verification.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2001%20-%20New%20User%20Onboarding/ticket-001-jira-resolved.png)
