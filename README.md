@@ -1,30 +1,8 @@
 # CONTOSO IT Service Desk Lab
 
-A practical Windows enterprise support lab built to demonstrate common Service Desk, IT Support and junior systems administration tasks.
+A practical Windows enterprise support lab demonstrating common Service Desk, IT Support and junior systems administration tasks in a Microsoft domain environment.
 
-The project follows a fictional employee, Emily Carter, through onboarding, workstation deployment, access provisioning, troubleshooting, device replacement, BitLocker recovery and eventual offboarding.
-
-Each task was managed as a ticket in Jira Service Management and supported with technical evidence.
-
-## Project Objectives
-
-This project was created to demonstrate practical experience with:
-
-- Active Directory user and computer administration
-- Organisational Unit management
-- Security group design and group nesting
-- Windows domain joins
-- DHCP and DNS configuration
-- SMB file sharing
-- Share and NTFS permissions
-- Account lockout and password reset procedures
-- Network printer deployment
-- Workstation replacement
-- Group Policy
-- BitLocker recovery
-- User offboarding
-- PowerShell administration
-- Jira Service Management ticket handling
+The project follows a fictional employee through onboarding, workstation deployment, access provisioning, troubleshooting, device replacement, BitLocker recovery and offboarding. Each scenario was managed as a ticket in Jira Service Management and supported with technical evidence.
 
 ## Lab Environment
 
@@ -36,53 +14,70 @@ This project was created to demonstrate practical experience with:
 | CONTOSO.local | Active Directory domain | NetBIOS name CONTOSO |
 | CONTOSO-LAN | VirtualBox internal network | 192.168.50.0/24 |
 
-## Server Roles and Technologies
+## Network Diagram
 
-- Active Directory Domain Services
-- DNS Server
-- DHCP Server
-- Group Policy Management
-- File and Storage Services
-- Print Management
-- BitLocker Drive Encryption
-- PowerShell
-- Windows 11 Enterprise
+![CONTOSO lab network diagram](diagrams/network-diagram.png)
+
+## Technologies and Skills
+
 - Windows Server 2022
+- Windows 11 Enterprise
+- Active Directory Domain Services
+- Active Directory user and computer administration
+- Organisational Units
+- Security groups and group nesting
+- DNS
+- DHCP
+- Group Policy
+- SMB file sharing
+- Share and NTFS permissions
+- Print Management
+- Account lockout and password resets
+- BitLocker and TPM recovery
+- PowerShell troubleshooting
 - Oracle VirtualBox
 - Jira Service Management
+- User onboarding and offboarding
+- Workstation deployment and replacement
 
-## Completed Tickets
+## Service Desk Tickets
 
-1. [Create a new starter account](tickets/ticket-01)
-2. [Join CLIENT01 to the domain](tickets/ticket-02)
-3. [Configure the Finance shared folder](tickets/ticket-03)
-4. [Add Emily Carter to the Finance Reporting group](tickets/ticket-04)
-5. [Reset a password and unlock an account](tickets/ticket-05)
-6. [Troubleshoot a DNS resolution issue](tickets/ticket-06)
-7. [Deploy a Finance network printer](tickets/ticket-07)
-8. [Replace Emily Carter's workstation](tickets/ticket-08)
-9. [Complete a BitLocker recovery](tickets/ticket-09)
-10. [Offboard Emily Carter](tickets/ticket-10)
+1. [New Starter Account](tickets/ticket-01.md)
+2. [Join CLIENT01 to the Domain](tickets/ticket-02.md)
+3. [Configure the Finance Shared Folder](tickets/ticket-03.md)
+4. [Finance Reporting Access](tickets/ticket-04.md)
+5. [Password Reset and Account Unlock](tickets/ticket-05.md)
+6. [DNS Resolution Troubleshooting](tickets/ticket-06.md)
+7. [Finance Network Printer Deployment](tickets/ticket-07.md)
+8. [Workstation Replacement](tickets/ticket-08.md)
+9. [BitLocker Recovery](tickets/ticket-09.md)
+10. [User Offboarding](tickets/ticket-10.md)
 
-A summary of all tickets is available in the [ticket register](ticket-register.md).
+A summary of all completed tickets is available in the [Ticket Register](ticket-register.md).
 
-## Repository Structure
+## Supporting Documentation
 
-```text
-lab-environment/
-    network-diagram.png
-    server-specifications.md
-    vm-configuration.md
+- [Ticket Register](ticket-register.md)
+- [IT Support Procedures](procedures.md)
+- [Knowledge Base](knowledge-base.md)
+- [Server and Workstation Specifications](lab-environment/server-specifications.md)
+- [Virtual Machine Configuration](lab-environment/vm-configuration.md)
+- [Technical Evidence](Screenshots)
 
-screenshots/
-    Technical evidence and resolved Jira tickets
+## Project Approach
 
-tickets/
-    Detailed documentation for Tickets 01 to 10
+The lab was designed around realistic support scenarios rather than isolated configuration exercises. Each ticket followed a basic service desk workflow:
 
-README.md
-assets
-diagrams
-knowledge-base
-procedures
-ticket-register.md
+1. Record the request or incident.
+2. Perform initial triage.
+3. Investigate or implement the required change.
+4. Verify the result.
+5. Capture technical evidence.
+6. Document the resolution.
+7. Resolve the Jira ticket.
+
+The scenarios include both successful implementation tasks and deliberately introduced faults, allowing troubleshooting and root-cause analysis to be demonstrated alongside routine administration.
+
+## Security and Privacy
+
+This is a fictional lab environment created for learning and portfolio purposes. It does not contain production systems or real customer information.
