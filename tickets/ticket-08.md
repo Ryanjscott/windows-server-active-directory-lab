@@ -1,7 +1,5 @@
 
----
-
-# `tickets/ticket-08`
+### `tickets/ticket-08.md`
 
 ```markdown
 # Ticket 08: Replace Emily Carter's Workstation
@@ -41,13 +39,11 @@ The following were confirmed:
 - CLIENT02 was located in the Workstations OU.
 - Emily authenticated successfully.
 - The Finance share was accessible.
-- CLIENT01 was disabled and retained for auditing or disposal.
+- CLIENT01 was disabled and retired.
 
 ## Resolution
 
-CLIENT02 was deployed successfully as Emily Carter's replacement workstation.
-
-Domain membership, user authentication and Finance resource access were restored. The original CLIENT01 account was disabled and retired.
+CLIENT02 was deployed successfully as Emily Carter's replacement workstation. Domain membership, authentication and Finance resource access were restored, and the original CLIENT01 account was disabled.
 
 ## Skills Demonstrated
 
@@ -60,9 +56,9 @@ Domain membership, user authentication and Finance resource access were restored
 
 ## Evidence
 
-- [CLIENT02 prepared](../screenshots/ticket-008-client02-prepared.png)
-- [CLIENT02 domain join](../screenshots/ticket-008-client02-domain-join.png)
-- [CLIENT02 in Workstations OU](../screenshots/ticket-008-client02-workstations-ou.png)
-- [User access restored](../screenshots/ticket-008-user-access-restored.png)
-- [CLIENT01 retired](../screenshots/ticket-008-old-client-retired.png)
-- [Resolved Jira ticket](../screenshots/ticket-008-jira-resolved.png)
+- [CLIENT02 prepared](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-client02-prepared.png)
+- [CLIENT02 domain join](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-client02-domain-join.png)
+- [CLIENT02 in Workstations OU](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-client02-workstations-ou.png)
+- [User access restored](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-user-access-restored.png)
+- [CLIENT01 retired](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-old-client-retired.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2008%20-%20Replace%20CLIENT01%20for%20Emily%20Carter/ticket-008-jira-resolved.png)
