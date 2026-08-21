@@ -1,6 +1,3 @@
-### `tickets/ticket-04.md`
-
-```markdown
 # Ticket 04: Add Emily Carter to the Finance Reporting Group
 
 ## Request
