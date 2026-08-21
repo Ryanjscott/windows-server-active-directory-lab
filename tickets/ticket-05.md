@@ -22,7 +22,7 @@ The domain account lockout policy was configured with:
 ## Actions Taken
 
 1. Reproduced the issue by entering an incorrect password repeatedly on CLIENT01.
-2. Confirmed that Emily's domain account became locked.
+2. Confirmed Emily's domain account became locked.
 3. Verified the locked state in Active Directory.
 4. Reset the password using a temporary credential.
 5. Unlocked the account.
@@ -41,23 +41,20 @@ The account was verified as:
 
 ## Resolution
 
-Emily Carter's account was unlocked and the password was reset.
-
-Successful authentication from CLIENT01 confirmed that access had been restored.
+Emily Carter's account was unlocked and the password was reset. Successful authentication from CLIENT01 confirmed access had been restored.
 
 ## Skills Demonstrated
 
 - Account lockout troubleshooting
 - Active Directory password resets
-- Identity verification workflow
 - Temporary password handling
 - Account status validation
 - End-user access restoration
 
 ## Evidence
 
-- [Locked account message on CLIENT01](../screenshots/ticket-005-account-locked-client.png)
-- [Account locked in Active Directory](../screenshots/ticket-005-ad-account-locked.png)
-- [Account unlocked](../screenshots/ticket-005-account-unlocked.png)
-- [Login restored](../screenshots/ticket-005-login-restored.png)
-- [Resolved Jira ticket](../screenshots/ticket-005-jira-resolved.png)
+- [Locked account message](../Screenshots/Ticket%2005%20-%20Password%20Reset%20and%20Account%20Unlock%20-%20Emily%20Carter/ticket-005-account-locked-client.png)
+- [Account locked in Active Directory](../Screenshots/Ticket%2005%20-%20Password%20Reset%20and%20Account%20Unlock%20-%20Emily%20Carter/ticket-005-ad-account-locked.png)
+- [Account unlocked](../Screenshots/Ticket%2005%20-%20Password%20Reset%20and%20Account%20Unlock%20-%20Emily%20Carter/ticket-005-account-unlocked.png)
+- [Login restored](../Screenshots/Ticket%2005%20-%20Password%20Reset%20and%20Account%20Unlock%20-%20Emily%20Carter/ticket-005-login-restored.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2005%20-%20Password%20Reset%20and%20Account%20Unlock%20-%20Emily%20Carter/ticket-005-jira-resolved.png)
