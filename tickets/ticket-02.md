@@ -19,7 +19,7 @@ Join the Windows 11 workstation CLIENT01 to the CONTOSO.local domain and prepare
 3. Verified that `dc01.contoso.local` resolved successfully.
 4. Joined CLIENT01 to `CONTOSO.local`.
 5. Restarted the workstation.
-6. Moved the CLIENT01 computer account from the default Computers container to the Workstations OU.
+6. Moved the CLIENT01 computer account into the Workstations OU.
 7. Signed in using `CONTOSO\ecarter`.
 8. Completed the required first-sign-in password change.
 
@@ -34,9 +34,7 @@ The following were confirmed:
 
 ## Resolution
 
-CLIENT01 was joined successfully to the CONTOSO.local domain and assigned to the correct Workstations OU.
-
-Emily Carter successfully authenticated to the workstation using her domain account.
+CLIENT01 was joined successfully to the CONTOSO.local domain and assigned to the correct Workstations OU. Emily Carter successfully authenticated using her domain account.
 
 ## Skills Demonstrated
 
@@ -49,7 +47,7 @@ Emily Carter successfully authenticated to the workstation using her domain acco
 
 ## Evidence
 
-- [Successful domain join](../screenshots/ticket-002-domain-join-success.png)
-- [Computer account in Workstations OU](../screenshots/ticket-002-computer-ou.png)
-- [Domain login verification](../screenshots/ticket-002-domain-login-verification.png)
-- [Resolved Jira ticket](../screenshots/ticket-002-jira-resolved.png)
+- [Successful domain join](../Screenshots/Ticket%2002%20-%20Join%20CLIENT01%20to%20CONTOSO%20Domain/ticket-002-domain-join-success.png)
+- [Computer account in Workstations OU](../Screenshots/Ticket%2002%20-%20Join%20CLIENT01%20to%20CONTOSO%20Domain/ticket-002-computer-ou.png)
+- [Domain login verification](../Screenshots/Ticket%2002%20-%20Join%20CLIENT01%20to%20CONTOSO%20Domain/ticket-002-domain-login-verification.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2002%20-%20Join%20CLIENT01%20to%20CONTOSO%20Domain/ticket-002-jira-resolved.png)
