@@ -1,7 +1,5 @@
 
----
-
-# `tickets/ticket-07`
+### `tickets/ticket-07.md`
 
 ```markdown
 # Ticket 07: Deploy the Finance Network Printer
@@ -20,9 +18,9 @@ Deploy a shared Finance printer and connect it to Emily Carter's workstation.
 
 ## Lab Implementation
 
-Because the environment did not contain a physical printer, a simulated printer was created using:
+Because the lab did not contain a physical printer, a simulated printer was created using:
 
-- Print Server role on DC01
+- Windows Print Server
 - Generic / Text Only driver
 - File-backed local printer port
 - Shared print queue
