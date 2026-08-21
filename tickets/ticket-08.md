@@ -1,7 +1,3 @@
-
-### `tickets/ticket-08.md`
-
-```markdown
 # Ticket 08: Replace Emily Carter's Workstation
 
 ## Request
