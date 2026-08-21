@@ -1,24 +1,22 @@
 # CONTOSO Knowledge Base
 
+This knowledge base records troubleshooting guidance developed from incidents and support tasks completed during the CONTOSO IT Service Desk Lab.
+
 ## KB001: Domain Resources Do Not Resolve
 
 ### Symptoms
 
-- The workstation has a valid IP address.
-- The domain controller is reachable by IP.
+- Workstation has a valid IP address.
+- Domain controller is reachable by IP.
 - Domain names do not resolve.
-- Shared folders cannot be accessed by hostname.
-- `nslookup` times out or queries the wrong server.
+- Shared resources cannot be accessed by hostname.
+- `nslookup` fails or queries the wrong DNS server.
 
 ### Likely Cause
 
-The workstation is using an incorrect DNS server instead of the Active Directory DNS server.
-
-Domain-joined Windows workstations should use the DNS server hosting the Active Directory domain zone.
+The workstation is using an incorrect DNS server instead of the DNS server hosting the Active Directory domain.
 
 ### Diagnosis
-
-Run:
 
 ```powershell
 ipconfig /all
