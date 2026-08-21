@@ -1,0 +1,53 @@
+### `tickets/ticket-04.md`
+
+```markdown
+# Ticket 04: Add Emily Carter to the Finance Reporting Group
+
+## Request
+
+Provide Emily Carter with access to Finance reporting resources through an approved Active Directory security group.
+
+## Environment
+
+- Domain: CONTOSO.local
+- User: ecarter
+- Group: GG_Finance_Reporting
+- Group scope: Global
+- Group category: Security
+- Group location: Security Groups OU
+
+## Actions Taken
+
+1. Created the `GG_Finance_Reporting` global security group.
+2. Added the description `Grants approved users access to Finance reporting resources`.
+3. Added Emily Carter to the group.
+4. Verified the group configuration.
+5. Verified Emily's direct group memberships in Active Directory Users and Computers.
+
+## Verification
+
+The following were confirmed:
+
+- `GG_Finance_Reporting` existed in the Security Groups OU.
+- The group was configured as a Global Security group.
+- Emily Carter appeared on the group's Members tab.
+- `GG_Finance_Reporting` appeared on Emily's Member Of tab.
+
+## Resolution
+
+Emily Carter was added successfully to the Finance Reporting security group. Access was assigned using group membership rather than permissions applied directly to the user.
+
+## Skills Demonstrated
+
+- Active Directory group creation
+- Access provisioning
+- Security-group administration
+- Group-based access control
+- Membership verification
+
+## Evidence
+
+- [Reporting group created](../Screenshots/Ticket%2004%20-%20Add%20Emily%20Carter%20to%20Finance%20Reporting%20Security%20Group/ticket-004-reporting-group-created.png)
+- [Group membership](../Screenshots/Ticket%2004%20-%20Add%20Emily%20Carter%20to%20Finance%20Reporting%20Security%20Group/ticket-004-group-membership.png)
+- [User memberships](../Screenshots/Ticket%2004%20-%20Add%20Emily%20Carter%20to%20Finance%20Reporting%20Security%20Group/ticket-004-user-memberships.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2004%20-%20Add%20Emily%20Carter%20to%20Finance%20Reporting%20Security%20Group/ticket-004-jira-resolved.png)
