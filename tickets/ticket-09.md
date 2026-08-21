@@ -2,7 +2,7 @@
 
 ## Incident
 
-CLIENT02 required BitLocker recovery following a simulated change to the trusted startup environment.
+CLIENT02 was placed into BitLocker recovery mode during a controlled recovery exercise.
 
 ## Environment
 
@@ -18,7 +18,6 @@ CLIENT02 required BitLocker recovery following a simulated change to the trusted
 CLIENT02 was confirmed as:
 
 - Fully encrypted
-- 100 percent encrypted
 - Protection enabled
 - Protected using TPM and recovery-password protectors
 
@@ -28,7 +27,7 @@ A VirtualBox snapshot was created before forcing recovery.
 
 A Group Policy Object named `CONTOSO BitLocker Recovery` was created and linked to the Workstations OU.
 
-The policy allowed BitLocker recovery information to be stored in Active Directory and required operating-system-drive recovery passwords to be backed up.
+The policy allowed operating-system-drive recovery information to be stored in Active Directory and required BitLocker recovery information to be backed up.
 
 ## Actions Taken
 
@@ -40,27 +39,24 @@ The policy allowed BitLocker recovery information to be stored in Active Directo
 6. Verified the recovery information on the CLIENT02 computer account.
 7. Forced CLIENT02 into BitLocker recovery mode.
 8. Matched the displayed recovery key ID with the Active Directory record.
-9. Entered the corresponding 48-digit recovery password.
-10. Restored the TPM key protector.
+9. Entered the corresponding recovery password.
+10. Restored TPM protection.
 11. Confirmed BitLocker protection was enabled.
-12. Completed a normal restart without another recovery prompt.
+12. Completed a normal restart.
 
 ## Verification
 
 The following were confirmed:
 
-- CLIENT02 was fully encrypted.
-- Protection status was On.
-- The recovery password was stored in Active Directory.
-- The recovery password successfully unlocked CLIENT02.
+- CLIENT02 remained fully encrypted.
+- BitLocker protection was enabled.
+- Recovery information was stored in Active Directory.
+- The stored recovery password successfully unlocked CLIENT02.
 - TPM protection was restored.
-- The workstation restarted normally.
 
 ## Resolution
 
-CLIENT02 was recovered successfully using the BitLocker recovery password stored in Active Directory.
-
-Normal TPM protection was restored after recovery.
+CLIENT02 was recovered successfully using BitLocker recovery information stored in Active Directory. Normal TPM protection was restored after recovery.
 
 ## Skills Demonstrated
 
@@ -73,7 +69,6 @@ Normal TPM protection was restored after recovery.
 
 ## Evidence
 
-- [Recovery key stored in Active Directory](../screenshots/ticket-009-recovery-key-in-ad.png)
-- [BitLocker recovery prompt](../screenshots/ticket-009-recovery-prompt.png)
-- [Access and protection restored](../screenshots/ticket-009-access-restored.png)
-- [Resolved Jira ticket](../screenshots/ticket-009-jira-resolved.png)
+- [Recovery information stored in Active Directory](../Screenshots/Ticket%2009%20-%20BitLocker%20Recovery%20Assistance%20-%20Emily%20Carter/ticket-009-recovery-key-in-ad.png)
+- [BitLocker recovery prompt](../Screenshots/Ticket%2009%20-%20BitLocker%20Recovery%20Assistance%20-%20Emily%20Carter/ticket-009-recovery-prompt.png)
+- [Resolved Jira ticket](../Screenshots/Ticket%2009%20-%20BitLocker%20Recovery%20Assistance%20-%20Emily%20Carter/ticket-009-jira-resolved.png)
